@@ -108,7 +108,7 @@ console.log(plantNeedsWater('Tuesday'))
   
 //7. Arrow Functions: remove the need to type out the keyword function everytime you need to create a function
 
-const plantNeedsWater = (day) => {
+const plantNeedWater = (day) => {
     if (day === 'Wednesday') {
       return true;
     } else {
