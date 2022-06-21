@@ -127,3 +127,5 @@ const rectangleArea = (width, height) => {
 //};
 
 const squareNum = num => num * num;
+
+console.log (squareNum(4))
