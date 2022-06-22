@@ -25,7 +25,8 @@ let registeredEarly = false;
 //3. Variable indicating the age of the runner
 const runnerAge = 18;
 
-//4. Create a control flow statement that checks whether the runner is an adult AND registered early. Add 1000 to their raceNumber if this is true
+//4. Create a control flow statement that checks whether the runner is an adult AND registered early. 
+//Add 1000 to their raceNumber if this is true
 
 if (runnerAge > 18 && registeredEarly === true) {
   raceNumber += 1000

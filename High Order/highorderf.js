@@ -33,9 +33,7 @@ const addTwo1 = num => {
 const checkConsistentOutput1 = (func, val) => { //checks the work of addTwo1
   let checkA = val + 2;
   let checkB = func(val);
-  return checkA == checkB ? checkA: "inconsistent results"
-
-
+  return checkA == checkB ? func(val) : "inconsistent results"
 }
 
 console.log(checkConsistentOutput1(addTwo1,3))

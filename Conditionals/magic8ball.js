@@ -1,16 +1,26 @@
+//Problem
+//In this project we will build a Magic Eight Ball using control flow in JavaScript.
+//The user will be able to input a question, then our program will output a random fortune.
+
+//1. Declaring the username
 let userName = '';
 
+//2. Saying hello to user
 userName ? console.log(`Hello, ${userName}!`) : 
 console.log ('Hello!')
 
+//3. Fix questions
 const userQuestion = 'Will I ever get married?'
 
 console.log(userQuestion);
 
-let randomNumber = Math.floor(Math.random() *8)
+//4. Calculating a random number between 0 an 8. 
+let randomNumber = Math.floor(Math.random() * 8)
 
+//5. Logging the number into the console
 console.log(randomNumber);
 
+//6. Switch case which will log the answer depending on the number calculated
 let eightBall = '';
 
 switch (randomNumber) {
