@@ -6,4 +6,10 @@ function basketpoints(num1, num2) {
     return (num1 * 2) + (num2 *3)
 }
 
-console.log(basketpoints(4,5))
+console.log(basketpoints(4, 5));
+
+const basketp = (num3, num4) => {
+    return (num3 * 2) + (num4 *3)
+}
+
+console.log(basketp(4,5))
