@@ -16,7 +16,7 @@ console.log(lessEqualZero(0))
 //ES6
 
 const lessEqualZero2 = (number) => {
-    (number < 0 || number === 0) ? true : false;
+    return (number < 0 || number === 0) ? true : false; // important to remember the return if not using console.log
 }
 
 console.log(lessEqualZero2(0))

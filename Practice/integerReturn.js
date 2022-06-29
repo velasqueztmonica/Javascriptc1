@@ -9,3 +9,11 @@ function addition2(num) {
 
 console.log(addition2(2))
 
+// ES6
+const addition1 = (num) => {
+    let a = num;
+    a++;
+    return a;
+}
+
+console.log(addition1(2))
