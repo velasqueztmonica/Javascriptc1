@@ -17,7 +17,7 @@ console.log(returnSum([1, 2, 3]))
 const sumArrays = (array) => {
     return array.reduce((accumulator, number) => {
         return number + accumulator;
-    })
+    },0)
 }
 
 console.log(sumArrays([1,2,3]))
