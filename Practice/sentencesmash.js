@@ -8,3 +8,9 @@ function smash(words) {
 }
 
 console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+
+/* Another way of doing is using factory functions
+
+const smash = words => words.join (' ');
+
+*/
