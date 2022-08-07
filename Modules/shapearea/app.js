@@ -16,3 +16,6 @@ const areaFunctions = require('./shape-area.js');
 const areaOfCircle = areaFunctions.circleArea(radius);
 const areaOfSquare = areaFunctions.squareArea(sideLength)
 console.log(areaOfCircle, areaOfSquare);
+
+
+//Please remember to initialise the file with functions prior to calling it in the app. 
