@@ -13,3 +13,30 @@ If our dishwashing promise is fulfilled, we’ll be able to perform related task
 
 All promises eventually settle, enabling us to write logic for what to do if the promise fulfills or if it rejects.
 
+##Avoiding common mistakes
+
+1. Nesting promises instead of chaining them
+2. Forgetting to return a promise
+
+
+##promise. ALL
+To maximize efficiency we should use concurrency, multiple asynchronous operations happening together. With promises, we can do this with the function Promise.all().
+
+- Promise.all() accepts an array of promises as its argument and returns a single promise. That single promise will settle in one of two ways:
+
+- If every promise in the argument array resolves, the single promise returned from Promise.all() will resolve with an array containing the resolve value from each promise in the argument array.
+If any promise from the argument array rejects, the single promise returned from Promise.all() will immediately reject with the reason that promise rejected. This behavior is sometimes referred to as failing fast.
+
+
+##Review
+1 - Promises are JavaScript objects that represent the eventual result of an asynchronous operation.
+2 - Promises can be in one of three states: pending, resolved, or rejected.
+3 - A promise is settled if it is either resolved or rejected.
+4 - We construct a promise by using the new keyword and passing an executor function to the Promise constructor method.
+setTimeout() is a Node function which delays the execution of a callback function using the event-loop.
+5 - We use .then() with a success handler callback containing the logic for what should happen if a promise resolves.
+6 - We use .catch() with a failure handler callback containing the logic for what should happen if a promise rejects.
+7 - Promise composition enables us to write complex, asynchronous code that’s still readable. We do this by chaining multiple .then()‘s and .catch()‘s.
+8 - To use promise composition correctly, we have to remember to return promises constructed within a .then().
+9 - We should chain multiple promises rather than nesting them.
+10 - To take advantage of concurrency, we can use Promise.all().
