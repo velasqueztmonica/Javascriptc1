@@ -16,7 +16,7 @@ const store = {
   const checkInventory = (order) => {
     return new Promise ((resolve, reject) => {
      setTimeout(()=> {  
-     const itemsArr = order.items;  
+     const itemsArr = order.items;  //extracting from the object the items i.e. items : [['sunglasses', 1], ['bags', 2]]
      let inStock = itemsArr.every(item => store[item[0]].inventory >= item[1]);
      
      if (inStock){

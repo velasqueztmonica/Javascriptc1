@@ -26,3 +26,5 @@ checkInventory(order)
                     .catch(handleFailure)
 
 checkInventory(order).then(handleSuccess, handleFailure)
+
+//Chaining promises known as compositions

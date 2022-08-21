@@ -16,5 +16,7 @@ async function announceDinner() {
     console.log(`I'm goint to make ${meal} for dinner`)
 };
   
-announceDinner('Hot doc');
+announceDinner('Hot dog');
+
+nativePromiseDinner('Cake')
 

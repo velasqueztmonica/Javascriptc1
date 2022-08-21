@@ -10,3 +10,8 @@ If there’s nothing returned from the function, it will return a promise with a
 If there’s a non-promise value returned from the function, it will return a promise resolved to that value.
 If a promise is returned from the function, it will simply return that promise
 
+
+##Handling Errors
+
+With async...await, we use try...catch statements for error handling. By using this syntax, not only are we able to handle errors in the same way we do with synchronous code, but we can also catch both synchronous and asynchronous errors. 
+

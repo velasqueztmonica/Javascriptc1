@@ -5,6 +5,7 @@ const usingSTO = () => {
     console.log('This is Monica speaking');
 };
 //The following function will use a 3000 delayed before printing / executing what the function usingSTO is doing. 
+//It will be included into the code after 3000ms
 setTimeout(usingSTO, 3000)
 
 

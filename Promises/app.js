@@ -38,4 +38,4 @@ const orderSunglasses = () => {
 
 const orderPromise = orderSunglasses();
 
-console.log(orderPromise)
+//console.log(orderPromise)
