@@ -1,6 +1,6 @@
 const tmdbKey = '937ca45daa06db824bd4ad27dec777fe';
 const tmdbBaseUrl = 'https://api.themoviedb.org/3';
-const playBtn = document.getElementById('playBtn');
+const playBtn = Document.getElementById('playBtn');
 
 const getGenres = async () => {
     const genreRequestEndpoint = '/genre/movie/list'
