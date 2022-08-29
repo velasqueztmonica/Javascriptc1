@@ -59,7 +59,7 @@ console.log(chores2)
 
 const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
 
-groceryList.shift() //method to remove the first item from the array 
+groceryList.shift() //method to remove the first item from the array, and returns the item
 console.log(groceryList)
 
 groceryList.unshift('popcorn'); //add the beginning of the grocery list

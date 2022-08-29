@@ -24,7 +24,7 @@ const tinasFollowers = ['a', 'n', 'd'];
 // Creating an empty array
 let mutualFollowers = [];
 
-for (let i = 0; i < bobsFollowers.length; i++) {
+for (let i = 0; i < bobsFollowers.length; i++) { // iterate through the rows
   for (let j = 0; j<tinasFollowers.length; j++) {
     if (bobsFollowers[i] === tinasFollowers[j]) {
       mutualFollowers.push(bobsFollowers[i])
@@ -63,4 +63,22 @@ for (let i = 0; i < rapperArray.length; i++){
 }
 
 console.log("And if you don't know, now you know.");
+
+function multiplyAll(arr) {
+  let product = 1;
+  // Only change code below this line
+for (let i = 0; i < arr.length; i++) { //iterate through the rows
+  //console.log(arr[i])
+  for (let j = 0; j < arr[i].length; j++) { //arr[i] to identify the length of the row
+    console.log(arr[i][j]);
+    console.log('----')
+    console.log(product *= arr[i][j])
+  }
+  //
+}
+  // Only change code above this line
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
