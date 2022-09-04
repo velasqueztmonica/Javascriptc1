@@ -14,6 +14,7 @@ const getGenres = async () => {
       const jsonResponse = await response.json();
       //renderResponse(jsonResponse)
       console.log(jsonResponse)
+      //const {}
     }
   }
   catch (error) {
