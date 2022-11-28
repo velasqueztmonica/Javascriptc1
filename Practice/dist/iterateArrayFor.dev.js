@@ -37,10 +37,8 @@ function filteredArray(arr, elem) {
   var newArr = []; // Only change code below this line
 
   for (var i = 0; i < arr.length; i++) {
-    for (var j = 0; j < arr[i].length; j++) {
-      if (arr[j] == elem) {
-        newArr.splice(arr[i]);
-      }
+    if (arr[i].indexOf(elem) == -1) {
+      newArr.push(arr[i]);
     }
   } // Only change code above this line
 
@@ -50,3 +48,8 @@ function filteredArray(arr, elem) {
 
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18)); //should return [[10, 8, 3], [14, 6, 23]])
+
+var myNestedArray = [// Only change code below this line
+['unshift', false, 1, 2, 3, 'complex', 'nested'], ['loop', 'shift', 6, 7, 1000, 'method'], ['concat', false, true, 'spread', 'array'], ['mutate', 1327.98, 'splice', 'slice', 'push'], ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth'] // Only change code above this line
+];
+console.log(myNestedArray);
