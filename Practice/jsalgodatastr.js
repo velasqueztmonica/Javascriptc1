@@ -193,7 +193,7 @@ const findLongest = string => {
     let stringArr = string.split(' ');
     let longestWord = '';
     for (let i = 0; i < stringArr.length; i++) {
-        if (stringArr[i] > longestWord) {
+        if (stringArr[i] >= longestWord) {
             longestWord = stringArr[i]
             
         }
@@ -202,3 +202,12 @@ const findLongest = string => {
 }
 
 console.log(findLongest('Hello Monica Maria Velasquez Torres you are beautiful'))
+
+//Arrays and Objects
+function animal(obj){
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+  
+const animalObject = obj => {
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
