@@ -209,5 +209,9 @@ function animal(obj){
 }
   
 const animalObject = obj => {
-    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+  
 }
+
+const a = (55 * 35 * 33) - (58 * 38 * 28);
+console.log(a)

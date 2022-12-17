@@ -57,7 +57,7 @@ const team = {
         return this._players.push(player);
     },
 
-// Step 8 - addGame mthod
+// Step 8 - addGame method
     
     addGame(opponentName, teamPoints, opponentPoints) {
         const game = {
